@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+
+.g-index {
+	margin: 0 auto;
+	padding-top: 50px;
+	width: 1300px;
+	height: 1204px;
+}
+
+.m-md {
+	display: block;
+	width: 1300px;
+	height: 1204px;
+}
+
+.m-top {
+	font-size: 25px;
+}
+
+.m-button1 {
+	width: 200px;
+	height: 40px;
+	border-radius:3px;
+	border: 1px solid ;
+	border-radius: 6px;
+	color: white;
+	background-color: #0169b2;
+}
+
+.m-lt {			/*图片*/
+	padding-left: 98px;
+	width: 542px;
+	height: 390px;
+	float: left;
+
+}
+
+.m-rt {
+	padding-top: 14px;
+	font-size: 21px;
+	height: 376px;
+	width: 450px;
+	float: left;
+	word-wrap: break-word;
+}
+
+.m-st {
+	clear: both;
+	display: block;
+	padding-left: 100px;
+	padding-right: 200px;
+	width: 1000px;
+}
+
+
+.m-stit {
+	height: 77px;
+}
+
+.m-stit1 {
+	letter-spacing: 2px;
+	color: #0169b2;
+	font-size: 29px;
+	font-weight: 700;
+}
+
+.m-button2 {
+	float: right;
+	width: 150px;
+	height: 35px;
+	border-radius:3px;
+	border: 1px solid ;
+	border-radius: 6px;
+	color: white;
+	background-color: #0169b2;
+}
+
+
+.m-sitem {
+	width: 1100px;
+	height: 88px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+
+.m-sitem-button1 {
+	margin-left: 37px;
+	margin-right: 20px;
+	width: 112px;
+	height: 30px;
+	border: 1px solid;
+	border-radius: 25px;
+	font-size: 20px;
+	background-color:rgb(1,158,227,0.8);
+	color: white;
+}
+
+.m-sitem-button2 {
+	margin-left: 37px;
+	margin-right: 20px;
+	width: 112px;
+	height: 30px;
+	border: 1px solid;
+	border-radius: 25px;
+	font-size: 20px;
+	background-color:rgb(90,174,115,0.8);
+	color: white;
+}
+
+
+.m-bt {
+	padding-left: 22px;
+	display: flex;
+	flex-direction: row;
+}
+
+.m-bt-p{
+	margin:  0px;
+	padding-top: 15px;
+	font-size: 30px;
+	color: #0169b2;
+}
+
+.m-bt-num{
+	margin: 0px;
+	font-size: 38px;
+	color: #0169b2;
+	letter-spacing: 4px;
+	font-weight: 700;
+}
+
+.m-bt2 {
+
+	font-size: 20px;
+	margin-top: 19px;
+	border: 1px solid;
+	height: 320px;
+	text-align: center;
+	width: 542px;
+	margin-right: 70px;
+}
+
+.ex-set {
+	padding-top: 22px;
+	color: #0169b2;
+}
+
+
+.m-bt-button {
+	margin-top: 70px;
+	width: 433px;
+	height: 74px;
+	color: white;
+	background-color: #0169b2;
+	border: 1px solid black;
+	border-radius: 6px;
+	box-shadow: 2px 2px 3px black;
+	font-size: 25px;
+}

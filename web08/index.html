@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <link href="css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+          $(".big").hide();
+          $(".sec_item").hide();
+          $(".thi_item").hide();
+          $(".addB").hide();
+
+          $(".fir_item>img").click(function(){
+              var imgSrc = $(this).attr('src');
+              $(".big").css("background-image", "url(" + imgSrc + ")");
+              $(".big").fadeIn("slow");
+              $('.big').click(function(){
+                $('.big').fadeOut("slow");
+              });
+          });
+
+          $("#fir").click(function(){
+            $(".fir_item").show();
+            $(".sec_item").hide();
+            $(".thi_item").hide();
+            $(".big").hide();
+            $("button").css("background-color","white");
+            $(this).css("background-color","grey");
+          });
+
+          $("#sec").click(function(){
+            $(".fir_item").hide();
+            $(".sec_item").show();
+            $(".thi_item").hide();
+            $(".big").hide();
+            $("button").css("background-color","white");
+            $(this).css("background-color","grey");
+          });
+
+          $("#thi").click(function(){
+            $(".fir_item").hide();
+            $(".sec_item").hide();
+            $(".thi_item").show();
+            $(".addB").show();
+            $("button").css("background-color","white");
+            $(this).css("background-color","grey");
+          });
+
+
+          $("div").on('click','.del',(function(){
+            $(this).parent().remove();
+          }));
+
+          $(".add").click(function(){
+            var i= $(".thi_li").last().text();
+            i++;
+            console.log(i);
+            var div = $("<div><li class="+"thi_li"+">"+i+"</li><button></button><button class= "+"del"+" style="+"width:"+"50px"+";>Delete</button></div>");
+            $(".thi_item").append(div);
+          });
+
+
+      });
+    </script>
+  </head>
+  <body>
+    <div class="tit">
+      <div class="tit_menu">
+          <button id="fir">First</button>
+          <button id="sec">Second</button>
+          <button id="thi">Third</button>
+      </div>
+      <div class="fir_item">
+          <p>1</p>
+          <img src='img/one.jpg' alt="jpg" width="195px" height="130px" class="first">
+          <img src='img/two.jpg' alt="jpg" width="195px" height="130px" class="first">
+          <img src='img/three.jpg' alt="jpg" width="195px" height="130px" class="first">
+          <img src='img/four.jpg' alt="jpg" width="195px" height="130px" class="first">
+          <img src='img/five.jpg' alt="jpg" width="195px" height="130px" class="first">
+          <img src='img/six.jpg' alt="jpg" width="195px" height="130px" class="first">        
+      </div>
+      <div class="sec_item">
+        <p>2</p>
+
+      </div>
+
+      <div class="thi_item">
+        <div>
+          <li class="thi_li" value="1">1</li>
+          <button></button>
+          <button class="del" style="width: 50px;">Delete</button>
+        </div>
+        <div>
+          <li class="thi_li" value="2">2</li>
+          <button></button>
+          <button class="del" style="width: 50px;">Delete</button>
+        </div>
+        <div>
+          <li class="thi_li" value="4">3</li>
+          <button></button>
+          <button class="del"  style="width: 50px;">Delete</button>
+        </div>
+
+      </div>
+
+      <div class="addB">
+        <button class="add" style="background-color: green">
+          添加
+        </button>
+      </div>
+
+      <div class="big"></div>
+    </div>
+
+  </body>
+</html>
